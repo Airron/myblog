@@ -18,5 +18,8 @@
 	<bean id="indexAction" class="myblog.index.action.IndexAction"
 		scope="prototype">
 	</bean>
-
+	<!-- 登录 -->
+	<bean id="loginAction" class="myblog.login.action.LoginAction"
+		scope="prototype">
+	</bean>
 </beans>
