@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,10 +28,10 @@
     <div class="card">
       <h1>私人入口</h1>
       
-      <form action="login_submit.action">
+      <form action="user_loginsubmit.action" method="post">
       <p>代号：<input name="username"  size="20" type="text" style="background-color:stransparent" ></p>
-      <p>密令：<input name="password" type="text" style="border:solid 1px black"></p>
-      <p><input type="submit" value="提交"> <a href="findpassword">找回密码</a></p>
+      <p>密令：<input name="password" type="password" style="border:solid 1px black"></p>
+      <p><input type="submit" value="提交"> <a href="findpassword.action">找回密码</a></p>
       <p>Email：dancesmiling@qq.com</p>
       </form>
       <ul class="linkmore">

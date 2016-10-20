@@ -18,7 +18,7 @@
       <li><a href="/jstt/" target="_blank" title="技术探讨">技术探讨</a></li>
       <li><a href="/news/s/" target="_blank" title="慢生活">慢生活</a></li>
       <li><a href="/newstalk/" target="_blank" title="碎言碎语">碎言碎语</a></li>
-      <li><a href="${pageContext.request.contextPath}/login_page.action" target="_blank" title="JS 实例代码演示">私人通道</a></li>
+      <li><a href="${pageContext.request.contextPath}/user_loginpage.action" target="_blank" title="JS 实例代码演示">私人通道</a></li>
     </ul>
     <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题--> 
   </nav>

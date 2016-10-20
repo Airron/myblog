@@ -1,6 +1,5 @@
-package myblog.login.action;
+package myblog.user.action;
 
-import org.apache.catalina.core.ApplicationContext;
 import org.apache.struts2.ServletActionContext;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -9,7 +8,8 @@ import com.opensymphony.xwork2.ModelDriven;
 import myblog.user.service.UserService;
 import myblog.user.vo.User;
 
-public class LoginAction extends ActionSupport implements ModelDriven<User>{
+@SuppressWarnings("serial")
+public class UserAction extends ActionSupport implements ModelDriven<User>{
 	private User user=new User();
 	@Override
 	public User getModel() {
@@ -28,7 +28,7 @@ public class LoginAction extends ActionSupport implements ModelDriven<User>{
 
 	
 	
-	public String page(){
+	public String loginpage(){
 		return "loginpage";
 	}
 	
@@ -45,4 +45,7 @@ public class LoginAction extends ActionSupport implements ModelDriven<User>{
 		
 	}
 	
+	public String loginsubmit(){
+		return "loginsubmit";
+	}
 }
