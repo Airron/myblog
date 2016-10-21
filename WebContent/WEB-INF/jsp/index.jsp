@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -26,10 +27,10 @@
     </figure>
     <div class="card">
       <h1>我的名片</h1>
-      <p>网名：DanceSmile | 即步非烟</p>
-      <p>职业：Web前端设计师、网页设计</p>
-      <p>电话：13662012345</p>
-      <p>Email：dancesmiling@qq.com</p>
+      <p>网名：Airron | 艾     倫</p>
+      <p>职业：Web网站开发、网页设计</p>
+      <p>电话：18827020542</p>
+      <p>Email：airron_jee@163.com</p>
       <ul class="linkmore">
         <li><a href="/" class="talk" title="给我留言"></a></li>
         <li><a href="/" class="address" title="联系地址"></a></li>

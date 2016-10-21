@@ -31,8 +31,8 @@
       <form action="user_loginsubmit.action" method="post">
       <p>代号：<input name="username"  size="20" type="text" style="background-color:stransparent" ></p>
       <p>密令：<input name="password" type="password" ></p>
-      <p><input type="submit" value="提交"> <a href="findpassword.action">找回密码</a></p>
-      <p>Email：dancesmiling@qq.com</p>
+      <p><input type="submit" value="登录" style="background:#000;color:#fff"> <a href="findpassword.action">找回密码</a></p>
+      
       </form>
       <ul class="linkmore">
         <li><a href="/" class="talk" title="给我留言"></a></li>

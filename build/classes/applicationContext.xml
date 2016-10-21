@@ -41,6 +41,7 @@
 		<property name="mappingResources">
 			<list>
 				<value>myblog/user/vo/User.hbm.xml</value>
+				<value>myblog/navigation/vo/Navigation.hbm.xml</value>
 			</list>
 		</property>
 	</bean>
@@ -50,6 +51,7 @@
 	<!-- 首页访问的Action -->
 	<bean id="indexAction" class="myblog.index.action.IndexAction"
 		scope="prototype">
+		<property name="navigationService" ref="navigationService"></property>
 	</bean>
 	<!-- user的action -->
 	<!-- useraction -->
@@ -64,13 +66,18 @@
 	<bean id="userService" class="myblog.user.service.UserService">
 		<property name="userDao" ref="userDao"/>
 	</bean>
-	
+	<bean id="navigationService" class="myblog.navigation.service.NavigationService">
+		<property name="navigationDao" ref="navigationDao"/>
+	</bean>
 	
 	
 	
 	<!-- dao的配置================================== -->
 	<bean id="userDao" class="myblog.user.dao.UserDao">
 		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="navigationDao" class="myblog.navigation.dao.NavigationDao">
+		<property name="sessionFactory" ref="sessionFactory"/>
 	</bean>
 	
 	
