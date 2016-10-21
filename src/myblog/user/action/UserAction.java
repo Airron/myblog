@@ -2,6 +2,7 @@ package myblog.user.action;
 
 import org.apache.struts2.ServletActionContext;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
@@ -35,6 +36,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User>{
 	
 	public String CheckUser(){
 		User existuser=userService.CheckUser(user);
+		ActionContext.getContext().getSession().put("usermessage", existuser);
 		if(existuser!=null){
 			ServletActionContext.getRequest().getSession()
 			.setAttribute("existUser", existuser);
@@ -48,4 +50,6 @@ public class UserAction extends ActionSupport implements ModelDriven<User>{
 	public String loginsubmit(){
 		return "loginsubmit";
 	}
+	
+	
 }

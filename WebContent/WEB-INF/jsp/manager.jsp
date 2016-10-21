@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="/struts-tags" prefix="s" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -26,12 +28,11 @@
       <figcaption><strong>渡人如渡己，渡已，亦是渡</strong> 当我们被误解时，会花很多时间去辩白。 但没有用，没人愿意听，大家习惯按自己的所闻、理解做出判别，每个人其实都很固执。与其努力且痛苦的试图扭转别人的评判，不如默默承受，给大家多一点时间和空间去了解。而我们省下辩解的功夫，去实现自身更久远的人生价值。其实，渡人如渡己，渡已，亦是渡人。</figcaption>
     </figure>
     <div class="card">
-      <h1>私人入口</h1> 
-      <form action="user_loginsubmit.action" method="post">
-      <p>代号：<input name="username"  size="20" type="text" style="background-color:stransparent" ></p>
-      <p>密令：<input name="password" type="password" ></p>
-      <p><input type="submit" value="登录" style="background:#000;color:#fff"> <a href="findpassword.action">找回密码</a></p>
-      </form>
+      <h1>我的名片</h1>
+      <p>网名：Airron | 艾     倫</p>
+      <p>职业：Web网站开发、网页设计</p>
+      <p>电话：18827020542</p>
+      <p>Email：airron_jee@163.com</p>
       <ul class="linkmore">
         <li><a href="/" class="talk" title="给我留言"></a></li>
         <li><a href="/" class="address" title="联系地址"></a></li>
