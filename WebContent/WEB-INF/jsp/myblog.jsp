@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib uri="/struts-tags" prefix="s" %>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -36,7 +37,13 @@
       <a href="/news/jsex/">JS经典实例</a>
 
       <a href="/jstt/html5/">html5资讯</a>
-</span>您当前的位置：<a href="/index.html">首页</a>&nbsp;>&nbsp;<a href="/jstt/">技术探讨</a></h2>
+      
+</span>
+
+您当前的位置：<a href="${pageContext.request.contextPath}/index.action">首页</a>&nbsp;>&nbsp;
+<a href="${pageContext.request.contextPath}/navigateBynavid.action?navid=<%=request.getSession().getAttribute("navid")%>">个人博客</a>
+
+</h2>
      <ul>
 
 <p class="ptit"><b><a href="/jstt/div/2013-08-10/576.html" target="_blank" title=" li列表在网页中常见应用例举（二）"> li列表在网页中常见应用例举（二）</a></b></p>

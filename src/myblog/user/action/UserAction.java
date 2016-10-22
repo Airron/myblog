@@ -15,7 +15,7 @@ public class UserAction extends ActionSupport implements ModelDriven<User>{
 	@Override
 	public User getModel() {
 		// TODO Auto-generated method stub
-		return null;
+		return user;
 	}
 	
 	private UserService userService;
@@ -43,12 +43,12 @@ public class UserAction extends ActionSupport implements ModelDriven<User>{
 			return "loginsubmit";
 		}
 		this.addActionError("登录失败:用户名或密码错误或用户未激活!");
-		return "loginpage";
+		return NONE;
 		
 	}
 	
 	public String loginsubmit(){
-		return "loginsubmit";
+		return CheckUser();
 	}
 	
 	

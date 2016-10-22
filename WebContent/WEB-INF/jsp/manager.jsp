@@ -1,16 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
     <%@ taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-<title>黑色时间轴个人博客模板</title>
+<meta charset="gb2312">
+<title>view-黑色时间轴个人博客模板</title>
 <meta name="keywords" content="黑色模板,个人网站模板,个人博客模板,博客模板,css3,html5,网站模板" />
 <meta name="description" content="这是一个有关黑色时间轴的css3 html5 网站模板" />
 <link href="css/styles.css" rel="stylesheet">
-<link href="css/animation.css" rel="stylesheet">
+<link href="css/view.css" rel="stylesheet">
 <!-- 返回顶部调用 begin -->
 <link href="css/lrtk.css" rel="stylesheet" />
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -21,131 +21,72 @@
 <![endif]-->
 </head>
 <body>
-<%@ include file="menu.jsp" %>
+<%@include file="menu.jsp" %>
+<!--header end-->
 <div id="mainbody">
-  <div class="info">
-    <figure> <img src="images/art.jpg"  alt="Panama Hat">
-      <figcaption><strong>渡人如渡己，渡已，亦是渡</strong> 当我们被误解时，会花很多时间去辩白。 但没有用，没人愿意听，大家习惯按自己的所闻、理解做出判别，每个人其实都很固执。与其努力且痛苦的试图扭转别人的评判，不如默默承受，给大家多一点时间和空间去了解。而我们省下辩解的功夫，去实现自身更久远的人生价值。其实，渡人如渡己，渡已，亦是渡人。</figcaption>
-    </figure>
-    <div class="card">
-      <h1>我的名片</h1>
-      <p>网名：Airron | 艾     倫</p>
-      <p>职业：Web网站开发、网页设计</p>
-      <p>电话：18827020542</p>
-      <p>Email：airron_jee@163.com</p>
-      <ul class="linkmore">
-        <li><a href="/" class="talk" title="给我留言"></a></li>
-        <li><a href="/" class="address" title="联系地址"></a></li>
-        <li><a href="/" class="email" title="给我写信"></a></li>
-        <li><a href="/" class="photos" title="生活照片"></a></li>
-        <li><a href="/" class="heart" title="关注我"></a></li>
-      </ul>
-    </div>
-  </div>
-  <!--info end-->
-  <div class="blank"></div>
-  <div class="blogs">
-    <ul class="bloglist">
-      <li>
-        <div class="arrow_box">
-          <div class="ti"></div>
-          <!--三角形-->
-          <div class="ci"></div>
-          <!--圆形-->
-          <h2 class="title"><a href="/" target="_blank">我希望我的爱情是这样的</a></h2>
-          <ul class="textinfo">
-            <a href="/"><img src="images/s1.jpg"></a>
-            <p> 我希望我的爱情是这样的，相濡以沫，举案齐眉，平淡如水。我在岁月中找到他，依靠他，将一生交付给他。做他的妻子，他孩子的母亲，为他做饭，洗衣服，缝一颗掉了的纽扣。然后，我们一起在时光中变老。</p>
-          </ul>
-          <ul class="details">
-            <li class="likes"><a href="#">10</a></li>
-            <li class="comments"><a href="#">34</a></li>
-            <li class="icon-time"><a href="#">2013-8-7</a></li>
-          </ul>
-        </div>
-        <!--arrow_box end--> 
-      </li>
-      <li>
-        <div class="arrow_box">
-          <div class="ti"></div>
-          <!--三角形-->
-          <div class="ci"></div>
-          <!--圆形-->
-          <h2 class="title"><a href="/" target="_blank">谁更心软，谁就先长大</a></h2>
-          <ul class="textinfo">
-            <a href="/"><img src="images/s2.jpg"></a>
-            <p> 男人都是孩子，需要用一生时间来长大。女人都想当孩子，却最擅长的角色是妈妈。恋爱一开始，是两个孩子之间的游戏，到后来，成了大人和孩子之间的游戏。恋爱这回事，总要有一个人先长大，对另一半多些包容和宠溺。而通常来看：谁更心软，谁就先长大...</p>
-          </ul>
-          <ul class="details">
-            <li class="likes"><a href="#">102</a></li>
-            <li class="comments"><a href="#">58</a></li>
-            <li class="icon-time"><a href="#">2013-8-7</a></li>
-          </ul>
-        </div>
-        <!--arrow_box end--> 
-      </li>
-      <li>
-        <div class="arrow_box">
-          <div class="ti"></div>
-          <!--三角形-->
-          <div class="ci"></div>
-          <!--圆形-->
-          <h2 class="title"><a href="/" target="_blank">Nothing is as sweet as you</a></h2>
-          <ul class="textinfo">
-            <a href="/"><img src="images/s3.jpg"></a>
-            <p> 有时候不是我不理你，其实我也想你了，只是我不知道该对你说什么。不管过去如何，过去的已经过去，最好的总在未来等着你。当我们懂得珍惜平凡的幸福的时候，就已经成了人生的赢家。Nothing is as sweet as you再没什么，能甜蜜如你。我以为只要很认真的喜欢就能打动一个人...</p>
-          </ul>
-          <ul class="details">
-            <li class="likes"><a href="#">15</a></li>
-            <li class="comments"><a href="#">2</a></li>
-            <li class="icon-time"><a href="#">2013-8-7</a></li>
-          </ul>
-        </div>
-        <!--arrow_box end--> 
-      </li>
-      <li>
-        <div class="arrow_box">
-          <div class="ti"></div>
-          <!--三角形-->
-          <div class="ci"></div>
-          <!--圆形-->
-          <h2 class="title"><a href="/" target="_blank">谁更心软，谁就先长大</a></h2>
-          <ul class="textinfo">
-            <a href="/"><img src="images/s4.jpg"></a>
-            <p> 男人都是孩子，需要用一生时间来长大。女人都想当孩子，却最擅长的角色是妈妈。恋爱一开始，是两个孩子之间的游戏，到后来，成了大人和孩子之间的游戏。恋爱这回事，总要有一个人先长大，对另一半多些包容和宠溺。而通常来看：谁更心软，谁就先长大...</p>
-          </ul>
-          <ul class="details">
-            <li class="likes"><a href="#">102</a></li>
-            <li class="comments"><a href="#">58</a></li>
-            <li class="icon-time"><a href="#">2013-8-7</a></li>
-          </ul>
-        </div>
-        <!--arrow_box end--> 
-      </li>
-      <li>
-        <div class="arrow_box">
-          <div class="ti"></div>
-          <!--三角形-->
-          <div class="ci"></div>
-          <!--圆形-->
-          <h2 class="title"><a href="/" target="_blank">趁我们都还年轻</a></h2>
-          <ul class="textinfo">
-            <a href="/"><img src="images/s5.jpg"></a>
-            <p> 趁我们都还年轻,多走几步路，多欣赏下沿途的风景，不要急于抵达目的地而错过了流年里温暖的人和物；趁我们都还年轻，多说些浪漫的话语，多做些幼稚的事情，不要嫌人笑话错过了生命中最美好的片段和场合；趁我们都还年轻，把距离缩短，把时间延长。趁我们都还年轻，多做些我们想要做的任何事...</p>
-          </ul>
-          <ul class="details">
-            <li class="likes"><a href="#">15</a></li>
-            <li class="comments"><a href="#">2</a></li>
-            <li class="icon-time"><a href="#">2013-8-7</a></li>
-          </ul>
-        </div>
-        <!--arrow_box end--> 
-      </li>
-    </ul>
+   <div class="blogs">
+    <div class="newlist">
+  <h2><span>
+<a href="/news/china/">国内新闻</a><a href="/news/world/">国际新闻</a><a href="/news/ent/">娱乐新闻</a><a href="/news/sports/">体育新闻</a></span>您当前的位置：<a href="/index.action">首页</a>&nbsp;>&nbsp;
+<a href="${pageContext.request.contextPath}/navigateBynavid.action?navid=<%=request.getSession().getAttribute("navid")%>">个人简介</a></h2>
+     <ul>
+<h3>国内新闻</h3>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/69.html" title="广东丹霞山发现巨型"青铜剑"(组图)">广东丹霞山发现巨型"青铜剑"(组图)</a></li>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/68.html" title="驻日大使崔天凯:胡锦涛主席访日有三点值得关注">驻日大使崔天凯:胡锦涛主席访日有三点值得</a></li>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/67.html" title="杭州湾跨海大桥日均车流量逾10万(组图)">杭州湾跨海大桥日均车流量逾10万(组图)</a></li>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/66.html" title="广东省物价局：粮价节后上涨不可信">广东省物价局：粮价节后上涨不可信</a></li>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/65.html" title="柏杨葬礼将于14日举行 骨灰抛撒绿岛海面">柏杨葬礼将于14日举行 骨灰抛撒绿岛海面</a></li>
+<h3>国际新闻</h3>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/72.html" title="中国紧急援助物资运抵缅甸仰光(组图)">中国紧急援助物资运抵缅甸仰光(组图)</a></li>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/70.html" title="俄罗斯第三任总统梅德韦杰夫宣誓就职">俄罗斯第三任总统梅德韦杰夫宣誓就职</a></li>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/15.html" title="中国紧急援助物资运抵缅甸仰光(组图)">中国紧急援助物资运抵缅甸仰光(组图)</a></li>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/14.html" title="印度成功试射一枚“烈火－3”型导弹">印度成功试射一枚“烈火－3”型导弹</a></li>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/13.html" title="马来红新月会宣布将向缅甸派出救灾小组">马来红新月会宣布将向缅甸派出救灾小组</a></li>
+<h3>娱乐新闻</h3>
+
+<li><span>2012-12-10</span><a href="/news/ent/2012-12-10/76.html" title="“最美清洁工”原是《赤壁》宫女">“最美清洁工”原是《赤壁》宫女</a></li>
+
+<li><span>2012-12-10</span><a href="/news/ent/2012-12-10/75.html" title="尹馨大胆亮相《男人装》 嫩肤美腿勾人魂">尹馨大胆亮相《男人装》 嫩肤美腿勾人魂</a></li>
+
+<li><span>2012-12-10</span><a href="/news/ent/2012-12-10/74.html" title="传张艺谋因执导奥运身价涨5倍">传张艺谋因执导奥运身价涨5倍</a></li>
+
+<li><span>2012-12-10</span><a href="/news/ent/2012-12-10/73.html" title="张曼玉广告写真花絮曝光 流露优雅从容">张曼玉广告写真花絮曝光 流露优雅从容</a></li>
+<h3>体育新闻</h3>
+
+<li><span>2012-12-10</span><a href="/news/sports/2012-12-10/78.html" title="中国男乒第16次捧起斯韦思林杯"></a></li>
+
+<li><span>2012-12-10</span><a href="/news/sports/2012-12-10/77.html" title="科比专为大场面而生"></a></li>
+
+<li><span>2012-12-10</span><a href="/news/sports/2012-12-10/71.html" title="奥运圣火成功登顶珠峰"></a></li>
+  </ul>
+</div>
     <!--bloglist end-->
     <aside>
+      <div class="search">
+        <form class="searchform" method="get" action="#">
+          <input type="text" name="s" value="Search" onfocus="this.value=''" onblur="this.value='Search'">
+        </form>
+      </div>
+      <div class="sunnav">
+        <ul>
+          <li><a href="${pageContext.request.contextPath}/blog.action" target="_blank" title="网站建设">创建博客</a></li>
+          <li><a href="/newshtml5/" target="_blank" title="HTML5 / CSS3">管理博客</a></li>
+          <li><a href="/jstt/" target="_blank" title="技术探讨">管理个人信息</a></li>
+          <li><a href="/news/s/" target="_blank" title="慢生活">查看留言</a></li>
+        </ul>
+      </div>
       <div class="tuijian">
-        <h2>推荐文章</h2>
+        <h2>栏目更新</h2>
         <ol>
           <li><span><strong>1</strong></span><a href="/">有一种思念，是淡淡的幸福,一个心情一行文字</a></li>
           <li><span><strong>2</strong></span><a href="/">励志人生-要做一个潇洒的女人</a></li>
@@ -186,24 +127,6 @@
           <li><span><a href="/">古典风格</a></span><a href="/">花气袭人是酒香―个人网站模板</a></li>
         </ol>
       </div>
-      <div class="search">
-        <form class="searchform" method="get" action="#">
-          <input type="text" name="s" value="Search" onfocus="this.value=''" onblur="this.value='Search'">
-        </form>
-      </div>
-      <div class="viny">
-        <dl>
-          <dt class="art"><img src="images/artwork.png" alt="专辑"></dt>
-          <dd class="icon-song"><span></span>南方姑娘</dd>
-          <dd class="icon-artist"><span></span>歌手：赵雷</dd>
-          <dd class="icon-album"><span></span>所属专辑：《赵小雷》</dd>
-          <dd class="icon-like"><span></span><a href="/">喜欢</a></dd>
-          <dd class="music">
-            <audio src="images/nf.mp3" controls></audio>
-          </dd>
-          <!--也可以添加loop属性 音频加载到末尾时，会重新播放-->
-        </dl>
-      </div>
     </aside>
   </div>
   <!--blogs end--> 
@@ -226,7 +149,7 @@
         <dd>DanceSmile
           <time>49分钟前</time>
         </dd>
-        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-07-28/530.html" class="title">如果要学习web前端开发，需要学习什么？ </a>中评论：</dd>
+        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-07-28/530.html#comments" class="title">如果要学习web前端开发，需要学习什么？ </a>中评论：</dd>
         <dd>文章非常详细，我很喜欢.前端的工程师很少，我记得几年前yahoo花高薪招聘前端也招不到</dd>
       </dl>
       <dl>
@@ -235,7 +158,7 @@
         <dd>yisa
           <time>2小时前</time>
         </dd>
-        <dd>在 <a href="http://www.yangqq.com/news/s/2013-07-31/533.html" class="title">芭蕾女孩的心事儿</a>中评论：</dd>
+        <dd>在 <a href="http://www.yangqq.com/news/s/2013-07-31/533.html#comments" class="title">芭蕾女孩的心事儿</a>中评论：</dd>
         <dd>我手机里面也有这样一个号码存在</dd>
       </dl>
       <dl>
@@ -244,7 +167,7 @@
         <dd>小林博客
           <time>8月7日</time>
         </dd>
-        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-06-18/285.html" class="title">如果个人博客网站再没有价值，你还会坚持吗？ </a>中评论：</dd>
+        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-06-18/285.html#comments" class="title">如果个人博客网站再没有价值，你还会坚持吗？ </a>中评论：</dd>
         <dd>博客色彩丰富，很是好看</dd>
       </dl>
     </div>

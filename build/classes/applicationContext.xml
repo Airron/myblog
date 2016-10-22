@@ -42,6 +42,7 @@
 			<list>
 				<value>myblog/user/vo/User.hbm.xml</value>
 				<value>myblog/navigation/vo/Navigation.hbm.xml</value>
+				<value>myblog/blog/vo/Blog.hbm.xml</value> 
 			</list>
 		</property>
 	</bean>
@@ -63,7 +64,9 @@
 	<bean id="navigationAction" class="myblog.navigation.action.NavigationAction" scope="prototype">
 		
 	</bean>
-	
+	<bean id="blogCreate" class="myblog.blog.action.BlogAction" scope="prototype">
+		<property name="blogService" ref="blogService"/>
+	</bean>
 	
 	<!-- service的配置============================== -->
 	<bean id="userService" class="myblog.user.service.UserService">
@@ -72,7 +75,9 @@
 	<bean id="navigationService" class="myblog.navigation.service.NavigationService">
 		<property name="navigationDao" ref="navigationDao"/>
 	</bean>
-	
+	<bean id="blogService" class="myblog.blog.service.BlogService">
+		<property name="blogDao" ref="blogDao"></property>
+	</bean>
 	
 	
 	<!-- dao的配置================================== -->
@@ -82,6 +87,8 @@
 	<bean id="navigationDao" class="myblog.navigation.dao.NavigationDao">
 		<property name="sessionFactory" ref="sessionFactory"/>
 	</bean>
-	
+	<bean id="blogDao" class="myblog.blog.dao.BlogDao">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
 	
 </beans>
