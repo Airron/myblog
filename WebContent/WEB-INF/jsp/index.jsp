@@ -7,10 +7,10 @@
 <title>黑色时间轴个人博客模板</title>
 <meta name="keywords" content="黑色模板,个人网站模板,个人博客模板,博客模板,css3,html5,网站模板" />
 <meta name="description" content="这是一个有关黑色时间轴的css3 html5 网站模板" />
-<link href="css/styles.css" rel="stylesheet">
-<link href="css/animation.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/styles.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/animation.css" rel="stylesheet">
 <!-- 返回顶部调用 begin -->
-<link href="css/lrtk.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/lrtk.css" rel="stylesheet" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <!-- 返回顶部调用 end-->

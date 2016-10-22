@@ -15,5 +15,18 @@
 			<result name="loginpage">/WEB-INF/jsp/login.jsp</result>
 			<result name="loginsubmit">/WEB-INF/jsp/index.jsp</result>
 		</action>
+		<!-- 配置导航栏的navigation的action -->
+		<action name="navigateBynavid" class="navigationAction">
+			<result name="1" type="redirectAction">index</result>
+			<result name="2">/WEB-INF/jsp/mymessage.jsp</result>
+			<result name="3">/WEB-INF/jsp/book.jsp</result>
+			<result name="4">/WEB-INF/jsp/designer.jsp</result>
+			<result name="5">/WEB-INF/jsp/myblog.jsp</result>
+			<result name="6">/WEB-INF/jsp/technology .jsp</result>
+			<result name="7">/WEB-INF/jsp/slowlife.jsp</result>
+			<result name="8">/WEB-INF/jsp/gossip.jsp</result>
+			<result name="9">/WEB-INF/jsp/personal.jsp</result>
+			<result name="false">/WEB-INF/jsp/error.jsp</result>
+		</action>
 	</package>
 </struts>

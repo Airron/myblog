@@ -21,4 +21,11 @@ public class NavigationDao extends HibernateDaoSupport{
 		}
 	}
 
+	public List<Navigation> getNavid() {
+		// 获得navigation的ID
+		String hql="from Navigation";
+		List<Navigation> list=this.getHibernateTemplate().find(hql);
+		return list;
+	}
+
 }

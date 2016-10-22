@@ -59,7 +59,10 @@
 		scope="prototype">
 		<property name="userService" ref="userService"/>
 	</bean>
-	
+	<!-- 配置导航栏navigationaction的action -->
+	<bean id="navigationAction" class="myblog.navigation.action.NavigationAction" scope="prototype">
+		
+	</bean>
 	
 	
 	<!-- service的配置============================== -->
